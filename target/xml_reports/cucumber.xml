@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="48.231">
+    <testcase classname="Automation Exercise" name="Shopping_Scenario" time="48.009">
+        <system-out><![CDATA[Given user should go to URL "http://automationexercise.com".................passed
+Then verify that you are in home page.......................................passed
+When click on sign up button................................................passed
+And Enter name and email and click on SignUp Button.........................passed
+And Fill all details in Signup and create account...........................passed
+Then Verify ACCOUNT CREATED! and click Continue button......................passed
+And Verify  Logged in as username at top....................................passed
+When Add products to cart...................................................passed
+And Click Cart button.......................................................passed
+Then Verify that cart page is displayed.....................................passed
+When Click Proceed To Checkout..............................................passed
+Then Verify that the delivery address and billing address are same..........passed
+When Click logout button....................................................passed
+Then Verify that user logged out............................................passed
+And Close the application...................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

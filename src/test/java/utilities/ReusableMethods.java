@@ -1,4 +1,6 @@
 package utilities;
+
+import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -38,6 +40,12 @@ public class ReusableMethods {
         // save the screenshot to the path given
         FileUtils.copyFile(source, finalDestination);
         return target;
+    }
+    public static void getScreenshotByte(Scenario scenario){
+        if ( scenario.isFailed()){
+            final byte[] screenshot = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot,"image/png","failedScenario");
+        }
     }
     //========Switching Window=====//
     public static void switchToWindow(String targetTitle) {

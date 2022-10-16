@@ -1,12 +1,14 @@
 package stepDefinitions;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.BlueRental_HomePage;
 import pages.BlueRental_LoginPage;
 import utilities.ReusableMethods;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -18,13 +20,26 @@ public class Blue_Rental_StepDef {
         // Write code here that turns the phrase above into concrete actions
         blueRentalHomePage.clickOnLogin();
     }
-    @When("user enters username as {string} and password as {string} and click on login button")
-    public void user_enters_username_as_and_password_as_and_click_on_login_button(String string, String string2) {
-        // Write code here that turns the phrase above into concrete actions
-        blueRentalLoginPage.email.sendKeys(string);
-        blueRentalLoginPage.password.sendKeys(string2);
+//    @When("user enters username as {string} and password as {string} and click on login button")
+//    public void user_enters_username_as_and_password_as_and_click_on_login_button(String string, String string2) {
+//        // Write code here that turns the phrase above into concrete actions
+//        Map<String, String> map = new HashMap<>();
+//        map.put("username", string);
+//        map.put("password", string2);
+//        blueRentalLoginPage.email.sendKeys(map.get("username"));
+//        blueRentalLoginPage.password.sendKeys(map.get("password"));
+//        blueRentalLoginPage.loginButton.click();
+//    }
+
+    @When("user enters username {string}  and password as {string} and click on login button")
+    public void user_enters_username_and_password_as_and_click_on_login_button(String string, String string2, DataTable dataTable) {
+        Map<String, String> map = dataTable.asMap();
+        blueRentalLoginPage.email.sendKeys(map.get("username"));
+        blueRentalLoginPage.password.sendKeys(map.get("password"));
         blueRentalLoginPage.loginButton.click();
     }
+
+
     @Then("verify the login is successful")
     public void verify_the_login_is_successful() {
         // Write code here that turns the phrase above into concrete actions
@@ -54,6 +69,12 @@ public class Blue_Rental_StepDef {
             blueRentalLoginPage.password.sendKeys(value.get("password"));
             ReusableMethods.waitFor(2);
             blueRentalLoginPage.loginButton.click();
+            blueRentalHomePage.userID.click();
+            blueRentalHomePage.logoutLink.click();
+            blueRentalHomePage.OK.click();
+            blueRentalHomePage.clickOnLogin();
+            ReusableMethods.waitFor(2);
         }
+        Map<String,String> customer_credential02 = credentials.asMap(String.class,String.class);
     }
 }

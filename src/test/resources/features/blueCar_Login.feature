@@ -1,6 +1,6 @@
 @blue_car_customers_login
 Feature: login_feature
-  Scenario: login_with_credentials
+  Scenario Outline: login_with_credentials
     Given user should go to URL "https://www.bluerentalcars.com/"
     When user navigate to login page
     And user enters username as "<username>" and password as "<password>" and click on login button

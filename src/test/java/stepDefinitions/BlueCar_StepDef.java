@@ -3,6 +3,8 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import pages.BlueRentalCar;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -12,6 +14,7 @@ public class BlueCar_StepDef {
     BlueRentalCar blueRentalCar = new BlueRentalCar();
     @Given("user go to the blue rental car site")
     public void user_go_to_the_blue_rental_car_site() throws InterruptedException {
+        ChromeOptions options = new ChromeOptions();
         // Write code here that turns the phrase above into concrete actions
         Driver.getDriver().get(ConfigReader.getProperty("url_Blue_Car"));
     }

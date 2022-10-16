@@ -1,3 +1,4 @@
+@data_tabless
 Feature: Search Feature
   Background: User_goes_to_google
     Given user should go to the google page

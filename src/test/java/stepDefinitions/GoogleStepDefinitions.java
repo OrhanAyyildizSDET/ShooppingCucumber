@@ -27,6 +27,7 @@ public class GoogleStepDefinitions {
     public void do_iphone_search(Integer int1) {
         google.searchBox.sendKeys("Iphone 13"+ Keys.ENTER);
         // Write code here that turns the phrase above into concrete actions
+        assertTrue(false);
     }
     @Then("user should see results")
     public void user_should_see_results() {
@@ -54,7 +55,6 @@ public class GoogleStepDefinitions {
         // Write code here that turns the phrase above into concrete actions
         Driver.getDriver().get(string);
     }
-
     @Given("user search for {string} on the google")
     public void user_search_for_car_on_the_google(String string) {
         // Write code here that turns the phrase above into concrete actions
@@ -71,4 +71,15 @@ public class GoogleStepDefinitions {
         // Write code here that turns the phrase above into concrete actions
         Driver.closeDriver();
     }
+    @Given("user is on the google page")
+    public void user_is_on_the_google_page() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @Then("verify test case fails")
+    public void verify_test_case_fails() {
+        // Write code here that turns the phrase above into concrete actions
+        assertTrue(false);
+    }
+
 }

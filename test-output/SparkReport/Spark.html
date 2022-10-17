@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 16, 2022 01:59:53 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 17, 2022 12:16:54 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 16, 2022 01:59:53 PM</h3>
+<h3>Oct 17, 2022 12:16:54 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 16, 2022 02:00:57 PM</h3>
+<h3>Oct 17, 2022 12:17:04 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"medunna_physician_api":61.182
+"medunna_patients_api":9.034
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tokenApi</td>
+<td>@allPatients</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -180,7 +180,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@allPhysicians</td>
+<td>@tokenApi</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -246,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tokenApi</a><a class="dropdown-item" href="#">@allPhysicians</a>
+<a class="dropdown-item" href="#">@allPatients</a><a class="dropdown-item" href="#">@tokenApi</a>
 </ul>
 </li>
 </ul>
@@ -257,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">medunna_physician_api</p>
+            <p class="name">medunna_patients_api</p>
             <p class="text-sm">
-              <span>1:59:55 PM</span> / <span>00:01:01:182</span>
+              <span>12:16:54 PM</span> / <span>00:00:09:034</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -267,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">medunna_physician_api</h5>
-<span class='badge badge-success'>10.16.2022 1:59:55 PM</span>
-<span class='badge badge-danger'>10.16.2022 2:00:56 PM</span>
-<span class='badge badge-default'>00:01:01:182</span>
+<h5 class="test-status text-pass">medunna_patients_api</h5>
+<span class='badge badge-success'>10.17.2022 12:16:54 PM</span>
+<span class='badge badge-danger'>10.17.2022 12:17:03 PM</span>
+<span class='badge badge-default'>00:00:09:034</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -282,23 +282,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>physicians</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>patients</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.Medunna_Api_Physicians.admin_send_the_request_for_physicians_data()">
-                <span>Given admin send the request for physicians data</span>
+              <div class="step pass-bg" title="stepDefinitions.Medunna_Api_Patients.admin_send_the_request_for_patients_data()">
+                <span>Given admin send the request for patients data</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.Medunna_Api_Physicians.admin_deserialization_the_physicians_data_to_java()">
-                <span>And admin deserialization the physicians data to java</span>
+              <div class="step pass-bg" title="stepDefinitions.Medunna_Api_Patients.admin_deserialization_the_patients_data_to_java()">
+                <span>And admin deserialization the patients data to java</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.Medunna_Api_Physicians.admin_saves_users_data_correspondent_files_to_validate()">
-                <span>Then admin saves users data correspondent files to validate</span>
+              <div class="step pass-bg" title="stepDefinitions.Medunna_Api_Patients.admin_saves_patients_data_correspondent_files_to_validate()">
+                <span>Then admin saves patients data correspondent files to validate</span>
       <div>
       </div>
               </div>
@@ -330,6 +330,42 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
+<p class="name">@allPatients</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@allPatients</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>patients</a>
+<div class="">
+<span class="badge badge-default">medunna_patients_api.patients</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
 <p class="name">@tokenApi</p>
 <p class="duration text-sm">1 tests</p>
 </div>
@@ -349,47 +385,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:59:55 PM</td>
+<td>12:16:54 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>physicians</a>
+<a href="#" class="linked" test-id='1' id='2'>patients</a>
 <div class="">
-<span class="badge badge-default">medunna_physician_api.physicians</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@allPhysicians</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@allPhysicians</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:59:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>physicians</a>
-<div class="">
-<span class="badge badge-default">medunna_physician_api.physicians</span>
+<span class="badge badge-default">medunna_patients_api.patients</span>
 </div>
 </td>
 </tr>

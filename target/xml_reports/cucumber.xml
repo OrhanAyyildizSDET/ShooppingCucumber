@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="61.821">
-    <testcase classname="medunna_physician_api" name="physicians" time="61.331">
-        <system-out><![CDATA[Given admin send the request for physicians data............................passed
-And admin deserialization the physicians data to java.......................passed
-Then admin saves users data correspondent files to validate.................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.358">
+    <testcase classname="medunna_patients_api" name="patients" time="9.103">
+        <system-out><![CDATA[Given admin send the request for patients data..............................passed
+And admin deserialization the patients data to java.........................passed
+Then admin saves patients data correspondent files to validate..............passed
 ]]></system-out>
     </testcase>
 </testsuite>

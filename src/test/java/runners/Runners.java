@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         monochrome = false,
         features = "./src/test/resources/features",
         glue = {"stepDefinitions","hooks"},
-        tags = "@allPhysicians",
+        tags = "@allPatients",
         dryRun = false
 )
 

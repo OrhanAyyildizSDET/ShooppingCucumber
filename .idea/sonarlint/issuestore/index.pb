@@ -56,11 +56,9 @@ S
 #src/test/java/utilities/Driver.java,4\1\4152d7304f85ec09195c9b4a24952dd4f0d6d0ac
 d
 4src/test/java/stepDefinitions/Medunna_Api_Steps.java,b\8\b8109dea812bf846337952de8bccb2ee09567b25
-W
-'src/test/java/utilities/TextReader.java,f\d\fdc0d082c120a714f82bb5122cc9c7e0226b0768
-T
-$src/test/java/pojo/Medunna_pojo.java,e\b\eb9d84f307a500e8f852e5ab2d8a4125ddd26ef0
 T
 $src/test/java/utilities/DBUtils.java,1\0\1042e86eb582c0bc7dd505c30092ab6d5f37698e
-I
-configurations.properties,2\c\2c97bd367384d8a0d73284f278a56022fca5f928
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+]
+-src/test/java/pojo/MedunnaPhysiciansPojo.java,6\4\64b4ad15d81ba4cb94954b317af6a428d590a45f
